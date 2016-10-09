@@ -8,8 +8,7 @@ var SubmissionForm = React.createClass({
     console.log("name " + enteredName);
     console.log("email " + email);
     this.refs.name.value = "";
-    this.refs.email.value = ""; 
-    
+    this.refs.email.value = "";
   },
   render: function() {
     return (
