@@ -13,7 +13,7 @@ var SubmissionForm = React.createClass({
   render: function() {
     return (
       <div className="submission-form-box">
-        <form ref="form" onSubmit={this.onSubmit} className="submission-form">
+        <form action="mailto:j.ayunani@gmail.com" method="post" enctype="text/plain" ref="form" onSubmit={this.onSubmit} className="submission-form">
           <input type="text" ref="name" placeholder="Name"/>
           <input type="text" ref="email" placeholder="Email"/>
           <button className="button expanded">Submit</button>
