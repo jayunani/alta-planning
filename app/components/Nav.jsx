@@ -6,19 +6,18 @@ var Nav = () => {
       <div className="top-bar">
         <div className="top-bar-left"> 
           <ul className="menu">
-            <li className="menu-text"> React Timer App </li>
             <li>
-              <IndexLink to="/" activeClassName="active-link"> Timer </IndexLink>
+              <IndexLink to="/" activeClassName="active-link"> test </IndexLink>
             </li>
             <li>
-              <Link to="/countdown" activeClassName="active-link"> Countdown </Link> 
+              <Link to="/" activeClassName="active-link"> test2 </Link> 
             </li>
           </ul>
         </div>
         <div className="top-bar-right">
         <ul className="menu"> 
           <li className="menu-text">
-            Created by <a href="http://www.github.com/jayunani" target="_blank"> Jessica Ayunani </a>
+           <li>test 3 </li>
           </li>
         </ul>
         </div>

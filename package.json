@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "alta-coding-challenge",
   "version": "1.0.0",
-  "description": "react boilerplate",
+  "description": "alta coding challenge",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
