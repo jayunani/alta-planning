@@ -12,8 +12,8 @@ var SubmissionForm = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
+      <div className="submission-form-box">
+        <form ref="form" onSubmit={this.onSubmit} className="submission-form">
           <input type="text" ref="name" placeholder="Name"/>
           <input type="text" ref="email" placeholder="Email"/>
           <button className="button expanded">Submit</button>
