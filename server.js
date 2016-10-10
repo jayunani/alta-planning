@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport({ service: "Gmail", auth: { user: "j.ayunani@gmail.com", pass: "jayunani8521" }});
+var transporter = nodemailer.createTransport({ service: "Gmail", auth: { user: "j.ayunani@gmail.com", pass: "l1ghtgrenades" }});
 var fs = require('fs');
 var path = require('path');
 var express = require('express'); 
