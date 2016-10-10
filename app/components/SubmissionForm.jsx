@@ -4,25 +4,22 @@ var $ = require('jQuery');
 var SubmissionForm = React.createClass({
   getInitialState: function(){
     return {
-      name: "", 
-      email: ""
+      name: "testName", 
+      email: "testEmail"
     };
   },
   onSubmit: function(e){
     e.preventDefault();
-    var enteredName = this.refs.name.value;
-    var enteredEmail = this.refs.email.value;
     this.setState({
-      name: enteredName,
-      email: enteredEmail
+      name: this.refs.name.value,
+      email: this.refs.email.value
+    }, function () {
+      this.sendEmail(this.state);
     });
-    console.dir("state: " + this.state.name);
-    this.sendEmail(this.state);
     this.refs.name.value = "";
     this.refs.email.value = "";
   },
   sendEmail: function(info) {
-    console.log("submitted info: " + info.name);
       $.ajax({
       url: '/',
       type: 'POST',

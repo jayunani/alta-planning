@@ -18,8 +18,8 @@ app.post('/', function(req, res){
     var mailContent = {
         from: 'do-not-reply <j.ayunani@gmail.com>',
         to: 'j.ayunani@gmail.com',
-        subject: 'form submission',
-        text: 'name: ' + req.body.name + 'email: ' + req.body.email
+        subject: 'New Form Submission',
+        text: 'name: ' + req.body.name + ' email: ' + req.body.email
     }
     transporter.sendMail(mailContent, function(err, info) {
         if(err){
