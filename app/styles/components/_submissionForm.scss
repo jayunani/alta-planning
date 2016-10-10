@@ -10,6 +10,10 @@
   font-size: 18px;
 }
 
+.button:hover{
+  background-color: $alta-red;
+}
+
 .error-message {
   height: 100px;
   width: 100px;

@@ -4,13 +4,11 @@
   "description": "alta coding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "karma start",
     "start": "node server.js"
   },
   "author": "Jessica Ayunani",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.13.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "nodemailer": "^2.6.4",
@@ -29,12 +27,6 @@
     "expect": "^1.14.0",
     "foundation-sites": "^6.2.0",
     "jquery": "^2.2.1",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-mocha": "^0.2.2",
-    "karma-mocha-reporter": "^2.0.0",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.8.0",
     "react-addons-test-utils": "^15.3.0",
