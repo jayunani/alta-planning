@@ -25,11 +25,10 @@ var SubmissionForm = React.createClass({
       type: 'POST',
       data: info,
       success: function(data) {
-        console.dir('success ' + Object.keys(info));
+        console.dir('success ' + data.message);
       },
       error: function(xhr, status, err) {
         console.dir("error: " + err.message);
-        console.warn("xhr: " + xhr.responseText);
       }
     });
   },

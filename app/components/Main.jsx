@@ -12,7 +12,7 @@ var Main = (props) => {
       <Banner/>
       <div className="row">
         <div  className="twelve columns text-center">
-            <SubmissionForm/>
+            <SubmissionForm />
         </div>
       </div>
 		</div> 
