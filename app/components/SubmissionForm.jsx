@@ -16,18 +16,19 @@ var SubmissionForm = React.createClass({
       name: enteredName,
       email: enteredEmail
     });
+    console.dir("state: " + this.state.name);
     this.sendEmail(this.state);
     this.refs.name.value = "";
     this.refs.email.value = "";
   },
   sendEmail: function(info) {
-    console.log("submitted info: " + Object.keys(info));
+    console.log("submitted info: " + info.name);
       $.ajax({
       url: '/',
-      cache: false,
+      type: 'POST',
       data: info,
       success: function(data) {
-        console.dir('success ' + info);
+        console.dir('success ' + Object.keys(info));
       },
       error: function(xhr, status, err) {
         console.dir("error: " + err.message);
