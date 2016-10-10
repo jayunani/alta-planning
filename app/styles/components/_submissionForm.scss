@@ -7,4 +7,11 @@
 
 .button {
   background-color: $alta-goldenrod;
+  font-size: 18px;
+}
+
+.error-message {
+  height: 100px;
+  width: 100px;
+  color: $alta-red;
 }
