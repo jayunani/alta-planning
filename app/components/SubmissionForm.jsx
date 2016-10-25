@@ -2,12 +2,14 @@ var React = require('react');
 var $ = require('jQuery');
 
 var SubmissionForm = React.createClass({
-  getInitialState: function(){
+
+  getInitialState: function() {
     return {
       name: "testName", 
       email: "testEmail"
     };
   },
+
   onSubmit: function(e){
     e.preventDefault();
     var submittedName = this.refs.name.value;
@@ -21,6 +23,7 @@ var SubmissionForm = React.createClass({
     this.refs.name.value = "";
     this.refs.email.value = "";
   },
+
   // validateEmail: function(email) {
   //   var regexEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   //   return regexEmail.test(email);
@@ -28,6 +31,7 @@ var SubmissionForm = React.createClass({
   // validateName: function(name){
   //   return name !== "";
   // },
+
   sendEmail: function(info) {
     console.log("sending email");
       $.ajax({
@@ -42,6 +46,7 @@ var SubmissionForm = React.createClass({
       }
     });
   },
+
   render: function() {
     return (
       <div className="submission-form-box">

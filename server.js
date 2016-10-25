@@ -17,9 +17,9 @@ app.post('/', function(req, res){
     console.log('inside email post ' + req);
     var mailContent = {
         from: 'do-not-reply <j.ayunani@gmail.com>',
-        to: 'jessicaroberts@altaplanning.com',
+        to: 'msayunani@gmail.com',
         subject: 'New Form Submission',
-        html:'<h1>Hi! There is a new form submission: </h1><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li></ul>'
+        html:'<h1> Someone is interested! :) </h1><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li></ul>'
     }
     transporter.sendMail(mailContent, function(err, info) {
         if(err){
